@@ -12,19 +12,23 @@
 		<script src="script.js"></script>
 	</head>
 	<body>
-		<header>
-			<p id = "about" style = "text-align: center"> 
-				10K Drinking is a drinking game where, for each player, is generated one number between 1 and the current number.
-				The initial current number is 10.000. When a player generates the number 1, he drinks. 
-				<br/>
-				<br/>
-				By playing the game you agree that you are at least 18 years old.
-				<br/>
-				<br/>
-				<strong >Have fun!</strong>
-			</p>
+		<header id = "header" style = "text-align: center">
+			<div id = "rules" >
+				<h3>Rules:</h3>
+				<p id = "about" > 
+					The first player will get a random number between 1 and 10.000. 
+					Then, the rest of the players will get a random number between 1 and the number the last player got.
+					When somebody gets 1, they must drink.
+					<br/>
+					<br/>
+					By playing the game you agree that you are at least 18 years old.
+					<br/>
+					<br/>
+					<strong >Have fun!</strong>
+				</p>
+			</div>
+			<hr>
 		</header>
-		<hr>
 		<main>
 			<div id = "add_players">
 				<input type = "text" id = "player" placeholder = "Player Name">

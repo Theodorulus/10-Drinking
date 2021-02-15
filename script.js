@@ -31,6 +31,13 @@ window.onload=function()
 	
 	function start_game() 
 	{
+		header = document.getElementById("header");
+		title = document.createElement("h1");
+		hr = document.createElement("hr");
+		title.innerHTML = "10K-Drinking";
+		header.innerHTML = "";
+		header.appendChild(title);
+		header.appendChild(hr);
 		var div_players = document.getElementById("add_players");
 		var div_start = document.getElementById("start_button");
 		if(div_players != null && div_start != null)
