@@ -34,7 +34,7 @@ window.onload=function()
 		header = document.getElementById("header");
 		title = document.createElement("h1");
 		hr = document.createElement("hr");
-		title.innerHTML = "10K-Drinking";
+		title.innerHTML = "10K-Game";
 		header.innerHTML = "";
 		header.appendChild(title);
 		header.appendChild(hr);
@@ -53,7 +53,7 @@ window.onload=function()
 		i = Math.floor(Math.random() * players.length)
 		var sc = document.createElement("div");
 		var p = document.createElement("div");
-		p.innerHTML = "Each player drank:"
+		p.innerHTML = "Each player lost:"
 		sc.appendChild(p)
 		for (i in players)
 		{
@@ -99,9 +99,9 @@ window.onload=function()
 		generate.addEventListener ("click", random_int);
 		gen.appendChild(generate)
 		
-		var you_drink = document.createElement("div");
-		you_drink.id = "who_drinks"
-		gen.appendChild(you_drink)
+		var you_lose = document.createElement("div");
+		you_lose.id = "who_loses"
+		gen.appendChild(you_lose)
 		
 		game.append(gen)
 		
@@ -157,8 +157,8 @@ window.onload=function()
 			}
 			console.log(players[i])
 			score[i] ++
-			var you_drink = document.getElementById("who_drinks");
-			you_drink.innerHTML = "Congrats, " + players[i] + "! You drink! " 
+			var you_lose = document.getElementById("who_loses");
+			you_lose.innerHTML = "Too bad, " + players[i] + "! You lose! " 
 			var generate = document.getElementById("generate");
 			generate.remove()
 			
